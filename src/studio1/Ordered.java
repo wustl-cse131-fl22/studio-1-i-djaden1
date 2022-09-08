@@ -8,6 +8,9 @@ public class Ordered {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		boolean isOrdered = false;
+	
+	
 		Scanner in = new Scanner(System.in);
 		System.out.println("Value for x?");
 		int x = in.nextInt();
@@ -16,6 +19,10 @@ public class Ordered {
 		System.out.println("Value for z?");
 		int z = in.nextInt();
 
+
+	isOrdered = x<y && y<z || z<y && y<x;
+	System.out.print(isOrdered);
+	
 	}
 
 }
